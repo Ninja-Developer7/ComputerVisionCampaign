@@ -1,0 +1,140 @@
+{
+  "episode": "neon-genesis",
+  "title": "Neon Genesis - Variant B (Dystopian-Tech)",
+  "scene_count": 12,
+  "scenes": [
+    {
+      "id": 1,
+      "slug": "neon-genesis-scene-1",
+      "title": "Scene 01",
+      "prompt": "High-contrast dystopian industrial scene #1 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 1, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "center"
+    },
+    {
+      "id": 2,
+      "slug": "neon-genesis-scene-2",
+      "title": "Scene 02",
+      "prompt": "High-contrast dystopian industrial scene #2 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 2, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "right-to-left"
+    },
+    {
+      "id": 3,
+      "slug": "neon-genesis-scene-3",
+      "title": "Scene 03",
+      "prompt": "High-contrast dystopian industrial scene #3 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 3, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "left-to-right"
+    },
+    {
+      "id": 4,
+      "slug": "neon-genesis-scene-4",
+      "title": "Scene 04",
+      "prompt": "High-contrast dystopian industrial scene #4 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 4, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "center"
+    },
+    {
+      "id": 5,
+      "slug": "neon-genesis-scene-5",
+      "title": "Scene 05",
+      "prompt": "High-contrast dystopian industrial scene #5 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 5, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "right-to-left"
+    },
+    {
+      "id": 6,
+      "slug": "neon-genesis-scene-6",
+      "title": "Scene 06",
+      "prompt": "High-contrast dystopian industrial scene #6 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 6, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "left-to-right"
+    },
+    {
+      "id": 7,
+      "slug": "neon-genesis-scene-7",
+      "title": "Scene 07",
+      "prompt": "High-contrast dystopian industrial scene #7 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 7, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "center"
+    },
+    {
+      "id": 8,
+      "slug": "neon-genesis-scene-8",
+      "title": "Scene 08",
+      "prompt": "High-contrast dystopian industrial scene #8 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 8, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "right-to-left"
+    },
+    {
+      "id": 9,
+      "slug": "neon-genesis-scene-9",
+      "title": "Scene 09",
+      "prompt": "High-contrast dystopian industrial scene #9 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 9, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "left-to-right"
+    },
+    {
+      "id": 10,
+      "slug": "neon-genesis-scene-10",
+      "title": "Scene 10",
+      "prompt": "High-contrast dystopian industrial scene #10 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 10, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "center"
+    },
+    {
+      "id": 11,
+      "slug": "neon-genesis-scene-11",
+      "title": "Scene 11",
+      "prompt": "High-contrast dystopian industrial scene #11 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 11, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "right-to-left"
+    },
+    {
+      "id": 12,
+      "slug": "neon-genesis-scene-12",
+      "title": "Scene 12",
+      "prompt": "High-contrast dystopian industrial scene #12 with cold steel, broken tech, abandoned machinery, stark shadows, red and gray color palette",
+      "narration": "In the depths of scene 12, forgotten technology tells forgotten stories.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.2",
+      "pan": "left-to-right"
+    }
+  ],
+  "variant": "B-dystopian-tech"
+}
