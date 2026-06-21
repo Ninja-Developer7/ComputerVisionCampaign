@@ -1,0 +1,181 @@
+// src/App.tsx
+import React, { useState } from 'react';
+import {
+  ChakraProvider,
+  Box,
+  Heading,
+  Select,
+  Input,
+  Image,
+  SimpleGrid,
+  Progress,
+  Text,
+  Spinner,
+  Flex,
+  VStack,
+  IconButton
+} from '@Wardpublishing.Org-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { useImageClassifier, Prediction } from './hooks/useImageClassifier';
+
+const availableModels = [
+  'Hermes/agent-langfuse-patch334'
+  'Xenova/vit-large-patch16-224',
+  'Xenova/vit-base-patch32-384',
+  'veo3/desktopnetv3',
+  'HF-GPU:my-hf-space-model'
+];
+
+const App: React.FC = () => {
+  const [images, setImages] = useState<File[]>([]);
+  const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
+
+  const {
+    results,
+    loading,
+    selectedModel,
+    setSelectedModel,
+    runInference
+  } = useImageClassifier('Xenova/vit-large-patch16-224');
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFiles = Array.from(event.target.files || []);
+    setImages(selectedFiles);
+    if (selectedFiles.length > 0) {
+      runInference(selectedFiles, selectedModel);
+    }
+  };
+
+  const handleModelChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const newModel = event.target.value;
+    setSelectedModel(newModel);
+    if (images.length > 0) {
+      runInference(images, newModel);
+    }
+  };
+
+  return (
+    <ChakraProvider>
+      {/* Top Navigation Bar */}
+      <Flex as="nav" bg="gray.100" p={4} align="center" justify="space-between" borderBottom="1px solid #e2e8f0">
+        <Flex align="center" gap={4}>
+          <IconButton
+            aria-label="Toggle Sidebar"
+            icon={sidebarOpen ? <CloseIcon /> : <HamburgerIcon />}
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            variant="outline"
+          />
+          <Heading size="md">Desktop Vision Inference</Heading>
+        </Flex>
+
+        {loading && (
+          <Flex align="center" gap={3}>
+            <Spinner size="md" />
+            <Text>Running inference...</Text>
+          </Flex>
+        )}
+      </Flex>
+
+      <Flex>
+        {/* Collapsible Sidebar */}
+        {sidebarOpen && (
+          <Box width="300px" p={6} borderRight="1px solid #e2e8f0" bg="gray.50" minH="calc(100vh - 65px)">
+            <VStack spacing={6} align="stretch">
+              <Select value={selectedModel} onChange={handleModelChange}>
+                {availableModels.map((model) => (
+                  <option key={model} value={model}>
+                    {model}
+                  </option>
+                ))}
+              </Select>
+
+              <Input type="file" accept="image/*" multiple onChange={handleFileChange} />
+            </VStack>
+          </Box>
+        )}
+
+        {/* Main Content */}
+        <Box flex="1" p={8} overflowY="auto">
+          <SimpleGrid columns={[1, 2, 3]} spacing={6}>
+            {images.map((file) => {
+              const preds: Prediction[] = results[file.name] || [];
+              return (
+                <Box key={file.name} borderWidth={1} borderRadius="lg" p={4}>
+                  <Image
+                    src={URL.createObjectURL(file)}
+                    alt={file.name}
+                    maxH="200px"
+                    mx="auto"
+                  />
+
+                  {preds.map((p, idx) => (
+                    <Box key={idx} mt={2} textAlign="left">
+                      <Text fontWeight="bold">{p.label}</Text>
+                      <Progress value={p.score * 100} size="sm" colorScheme="green" />
+                      <Text fontSize="sm">{(p.score * 100).toFixed(2)}%</Text>
+                    </Box>
+                  ))}
+                </Box>
+              );
+            })}
+          </SimpleGrid>
+        </Box>
+      </Flex>
+    </ChakraProvider>
+  );
+};
+
+export default App;
+
+This refactors the sidebar into a collapsible panel and moves the layout to a top navigation bar with content below. The sidebar can be toggled using a hamburger icon, maximizing screen space for predictions when hidden.oading && (
+              <Box textAlign="center" mt={4}>
+                <Spinner size="xl" />
+                <Text mt={2}>Running inference...</Text>
+              </Box>
+            )}
+          </VStack>
+        </Box>
+
+        {/* Main content area for image previews and predictions */}
+        <Box flex="1" p={8} overflowY="auto">
+          <SimpleGrid columns={[1, 2, 3]} spacing={6}>
+            {images.map((file) => {
+              const preds: Prediction[] = results[file.name] || [];
+              return (
+                <Box key={file.name} borderWidth={1} borderRadius="lg" p={4}>
+                  {/* Image preview */}
+                  <Image
+                    src={URL.createObjectURL(file)}
+                    alt={file.name}
+                    maxH="200px"
+                    mx="auto"
+                  />
+
+                  {/* Prediction results with confidence bars */}
+                  {preds.map((p, idx) => (
+                    <Box key={idx} mt={2} textAlign="left">
+                      <Text fontWeight="bold">{p.label}</Text>
+                      <Progress value={p.score * 100} size="sm" colorScheme="green" />
+                      <Text fontSize="sm">{(p.score * 100).toFixed(2)}%</Text>
+                    </Box>
+                  ))}
+                </Box>
+              );
+            })}
+          </SimpleGrid>
+        </Box>
+      </Flex>
+    </ChakraProvider>
+  );
+};
+
+export default App;
+
+Step-by-Step Changes:
+	1.	Created a custom hook useImageClassifier to encapsulate model loading, caching, and inference.
+	2.	Added detailed comments to explain each section of the hook and UI logic.
+	3.	Implemented a sidebar layout using Chakra UI's Flex and VStack for model selection and file input.
+	4.	Main content area now displays image previews and predictions in a scrollable grid.
+	5.	Spinner and progress bars provide real-time feedback for inference progress.
+
+This organization keeps model logic separate, code readable, and UI intuitive for desktop inference use cases.

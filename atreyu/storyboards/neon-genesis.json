@@ -1,0 +1,139 @@
+{
+  "episode": "neon-genesis",
+  "title": "Neon Genesis",
+  "scene_count": 12,
+  "scenes": [
+    {
+      "id": 1,
+      "slug": "neon-genesis-scene-1",
+      "title": "Scene 01",
+      "prompt": "A cinematic cyberpunk scene #1 related to 'Neon Genesis'.",
+      "narration": "In scene 1, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 2,
+      "slug": "neon-genesis-scene-2",
+      "title": "Scene 02",
+      "prompt": "A cinematic cyberpunk scene #2 related to 'Neon Genesis'.",
+      "narration": "In scene 2, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 3,
+      "slug": "neon-genesis-scene-3",
+      "title": "Scene 03",
+      "prompt": "A cinematic cyberpunk scene #3 related to 'Neon Genesis'.",
+      "narration": "In scene 3, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 4,
+      "slug": "neon-genesis-scene-4",
+      "title": "Scene 04",
+      "prompt": "A cinematic cyberpunk scene #4 related to 'Neon Genesis'.",
+      "narration": "In scene 4, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 5,
+      "slug": "neon-genesis-scene-5",
+      "title": "Scene 05",
+      "prompt": "A cinematic cyberpunk scene #5 related to 'Neon Genesis'.",
+      "narration": "In scene 5, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 6,
+      "slug": "neon-genesis-scene-6",
+      "title": "Scene 06",
+      "prompt": "A cinematic cyberpunk scene #6 related to 'Neon Genesis'.",
+      "narration": "In scene 6, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 7,
+      "slug": "neon-genesis-scene-7",
+      "title": "Scene 07",
+      "prompt": "A cinematic cyberpunk scene #7 related to 'Neon Genesis'.",
+      "narration": "In scene 7, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 8,
+      "slug": "neon-genesis-scene-8",
+      "title": "Scene 08",
+      "prompt": "A cinematic cyberpunk scene #8 related to 'Neon Genesis'.",
+      "narration": "In scene 8, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 9,
+      "slug": "neon-genesis-scene-9",
+      "title": "Scene 09",
+      "prompt": "A cinematic cyberpunk scene #9 related to 'Neon Genesis'.",
+      "narration": "In scene 9, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 10,
+      "slug": "neon-genesis-scene-10",
+      "title": "Scene 10",
+      "prompt": "A cinematic cyberpunk scene #10 related to 'Neon Genesis'.",
+      "narration": "In scene 10, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 11,
+      "slug": "neon-genesis-scene-11",
+      "title": "Scene 11",
+      "prompt": "A cinematic cyberpunk scene #11 related to 'Neon Genesis'.",
+      "narration": "In scene 11, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    },
+    {
+      "id": 12,
+      "slug": "neon-genesis-scene-12",
+      "title": "Scene 12",
+      "prompt": "A cinematic cyberpunk scene #12 related to 'Neon Genesis'.",
+      "narration": "In scene 12, the story unfolds against neon rain and chrome reflections.",
+      "duration": 5.0,
+      "zoom_start": "1.0",
+      "zoom_end": "1.15",
+      "pan": "center"
+    }
+  ]
+}

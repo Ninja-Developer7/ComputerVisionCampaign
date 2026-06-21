@@ -1,0 +1,13 @@
+# install globally (available in all projects, works with Codex, Cursor, OpenCode,
+# and any agent that loads skills from ~/.agents/skills)
+hf skills add --global
+
+# for Claude Code use the --claude flag
+hf skills add --claude --global
+
+# or install for the current project only (works with Codex, Cursor, OpenCode,
+# and any agent that loads skills from .agents/skills)
+hf skills add
+
+# for Claude Code, use the --claude flag
+hf skills add --claude
