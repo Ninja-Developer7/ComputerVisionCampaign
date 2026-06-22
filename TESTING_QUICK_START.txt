@@ -56,10 +56,10 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📁 OUTPUTS:
-  • Preview videos: atreyu/episodes/<episode-name>/episode.mp4
-  • Scene images: atreyu/episodes/<episode-name>/scene_*.png
-  • Narration: atreyu/voices/<episode>_narration.wav
-  • Soundtrack: atreyu/assets/<episode>_soundtrack.wav
+  • Preview videos: atreyu/episodes/<episode>/episode.mp4
+  • Scene images: atreyu/episodes/<episode>/scene_*.png
+  • Narration: atreyu/voices/<episode>/narration.wav
+  • Soundtrack: atreyu/assets/<episode>/soundtrack.wav
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
